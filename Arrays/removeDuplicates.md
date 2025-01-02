@@ -39,6 +39,10 @@ Explanation: `_` represents any value.
 
 ---
 
+## Code Solutions
+
+### Solution 1: Two-Pointer (Slower)
+
 ```python
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
@@ -55,4 +59,14 @@ class Solution:
                 j += 1
 
         return j
+```
+
+### Solution 2: Sorted Sets (Faster - Beats 100% of Solutions)
+
+```python
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        unique = sorted(set(nums))
+        nums[:len(unique)] = unique
+        return len(unique)
 ```
