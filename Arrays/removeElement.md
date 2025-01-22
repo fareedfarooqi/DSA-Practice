@@ -69,11 +69,32 @@ The judge will validate the solution with:
 
 ## Code Solutions
 
-- **Time Complexity**: It is `O(mn)` whereby m is the number of times `val` is repeated.
+### Solution 2: Remove Method
+
+- **Time Complexity**: It is `O(n^2)`.
 
 ```python
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         while val in nums:
             nums.remove(val)
+```
+
+### Solution 2: Two-Pointer
+
+- **Time Complexity**: It is `O(n)`.
+
+```python
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        # The 'j' variable will track our non-val index.
+        j = 0
+
+        # The 'i' variable will be used to scan the array.
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[j] = nums[i]
+                j += 1
+
+        return j
 ```
