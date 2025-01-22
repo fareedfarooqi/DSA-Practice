@@ -67,9 +67,15 @@ The judge will validate the solution with:
 - So we are given a list of `nums` and we are required to remove all instances of `val`.
 - We can do in-place removal whereby we can loop through the entire array and keep looping until we remove all instances of `val` from the array.
 
+### 2. Two-Pointer Approach
+
+- `i` scans through every element of the array.
+- Whenever an element is NOT equal to `val` it is moved/copied to the index `j`, and `j` is incremented. So `j`is tracking `non-val` elements.
+- After the loop the first `j` elements of `nums` are is the length of the modified array without `val`.
+
 ## Code Solutions
 
-### Solution 2: Remove Method
+### Solution 1: Remove Method
 
 - **Time Complexity**: It is `O(n^2)`.
 
