@@ -73,7 +73,9 @@ This problem can be efficiently solved using a stack and a dictionary. The idea 
    - If it is empty, all brackets are matched (return `true`).
    - If not, some opening brackets are unmatched (return `false`).
 
-## I have provided a written example in the image attached.
+I have provided a written example in the image attached.
+
+![Uploading IMG_3209.jpg…]()
 
 ## Code Implementation
 
