@@ -75,7 +75,7 @@ This problem can be efficiently solved using a stack and a dictionary. The idea 
 
 I have provided a written example in the image attached.
 
-![Uploading IMG_3209.jpg…]()
+![IMG_3209](https://github.com/user-attachments/assets/a804dd8d-50a5-433a-ad13-cba82f7f5090)
 
 ## Code Implementation
 
