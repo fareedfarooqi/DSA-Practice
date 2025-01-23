@@ -91,10 +91,13 @@ class MinStack:
         self.stack.append(val)
 
         if not self.min_vals_stack or val <= self.min_vals_stack[-1]:
-            self.min_vals_stack.append(val)                                     # Append the new smallest value to our second stack
+            # Append the new smallest value to our second stack
+            self.min_vals_stack.append(val)
 
     def pop(self) -> None:
-        if self.top() == self.min_vals_stack[-1]:                               # If the number we are popping is the same as the current minimum number (as per the second stack) we must set a new minimum value by popping from our second stack
+        # If the number we are popping is the same as the current minimum number
+        # (as per the second stack) we must set a new minimum value by popping from our second stack
+        if self.top() == self.min_vals_stack[-1]:
             self.min_vals_stack.pop()
 
         self.stack.pop()
