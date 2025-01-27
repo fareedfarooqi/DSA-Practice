@@ -1,4 +1,4 @@
-# Remove Element from Array
+# Remove Element from Array (Easy)
 
 ## Problem Description
 
