@@ -1,4 +1,4 @@
-# Concatenate Array with Itself
+# Concatenate Array with Itself (Easy)
 
 ## Problem Description
 

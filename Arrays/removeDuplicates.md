@@ -1,4 +1,4 @@
-# Remove Duplicates from Array
+# Remove Duplicates from Array (Easy)
 
 ## Problem Description
 
