@@ -33,15 +33,15 @@ Return the number of students who are unable to eat.
 ### Example 1:
 
 **Input**:
-students = [1, 1, 0, 0]
-sandwiches = [0, 1, 0, 1]
+`students = [1, 1, 0, 0]`
+`sandwiches = [0, 1, 0, 1]`
 
 **Output**:
-0
+`0`
 
 **Explanation**:
 
-- Initial: students = [1, 1, 0, 0], sandwiches = [0, 1, 0, 1]
+- Initial: `students = [1, 1, 0, 0]`, `sandwiches = [0, 1, 0, 1]`
 
 1. Front student prefers 1, top sandwich is 0 → student moves to the back → students = [1, 0, 0, 1].
 2. Repeat: students = [0, 0, 1, 1].
