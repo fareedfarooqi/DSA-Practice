@@ -78,7 +78,7 @@ browserHistory.back(7); // Move back to the homepage "leetcode.com". Returns "le
 
 ## Code Solutions
 
-### Solution 1: Insertion Method (Not Fast)
+### Doubly Linked List
 
 - **Time Complexity**: It is `O(1)`.
 
