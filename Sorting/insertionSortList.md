@@ -59,6 +59,9 @@ head = [-1,5,3,4,0]
 - We then rearrange where the pointers point (essentially attaching the node in place in the dummy list).
 - View the written logic below:
 
+![IMG_3223](https://github.com/user-attachments/assets/472f0b3d-47f8-4e1a-82d1-f8ba522ac806)
+![IMG_3224](https://github.com/user-attachments/assets/d928c784-6f77-4424-9871-1fe4e84ca758)
+
 ## Code Implementation
 
 ### Solution:
