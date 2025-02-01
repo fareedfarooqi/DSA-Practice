@@ -66,6 +66,12 @@ The values of `nums` are not necessarily unique.
 
 ### Three-Way Partitioning (Dutch National Flag Algorithm) Logic
 
+![IMG_3238](https://github.com/user-attachments/assets/aa038fd2-0211-46f7-8749-0b2638192644)
+![IMG_3239](https://github.com/user-attachments/assets/13d0af19-6ad3-489a-8264-189cbe20394c)
+![IMG_3240](https://github.com/user-attachments/assets/1d6c8d65-d6fa-4071-9e06-bb504e70356e)
+![IMG_3241](https://github.com/user-attachments/assets/3d33981e-52be-4868-93c7-449d65a5a6fd)
+![IMG_3242](https://github.com/user-attachments/assets/51c9adef-7001-42db-a244-fb0527c66c94)
+
 ## Code Implementation
 
 ### Solution 1 (Slowest - Not Optimised)
