@@ -1,5 +1,14 @@
 # Implement Stack using Queues (Easy)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Implement Stack using Queues**](https://leetcode.com/problems/implement-stack-using-queues/description/)
+
+---
+
 ## Problem Description
 
 Implement a last-in-first-out (LIFO) **stack** using only two **queues**. The implemented stack should support all the standard functions of a normal stack:

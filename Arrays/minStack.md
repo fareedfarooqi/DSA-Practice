@@ -1,5 +1,14 @@
 # Min Stack (Medium)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Min Stack**](https://leetcode.com/problems/min-stack/description/)
+
+---
+
 ## Problem Description
 
 Design a stack that supports the following operations in **constant time** (`O(1)`):

@@ -1,5 +1,14 @@
 # Merge Two Sorted Lists (Easy)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Merge Two Sorted Lists**](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+
+---
+
 ## Problem Description
 
 You are given the heads of two sorted linked lists, `list1` and `list2`.

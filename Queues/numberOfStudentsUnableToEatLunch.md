@@ -1,5 +1,14 @@
 # 1700. Number of Students Unable to Eat Lunch (Easy)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Number of Students Unable to Eat Lunch**](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/description/)
+
+---
+
 ## Problem Description
 
 The school cafeteria offers **circular** and **square** sandwiches at lunch break, represented by:

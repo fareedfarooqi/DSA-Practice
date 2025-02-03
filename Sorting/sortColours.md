@@ -1,5 +1,14 @@
 # Sort Colors (Medium)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Sort Colors**](https://leetcode.com/problems/sort-colors/description/)
+
+---
+
 ## **Problem Statement**
 
 Given an array `nums` with `n` objects colored red, white, or blue, sort them **in-place** so that objects of the same color are adjacent, with the colors in the order **red, white, and blue**.

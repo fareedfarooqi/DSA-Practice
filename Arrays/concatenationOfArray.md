@@ -1,5 +1,14 @@
 # Concatenate Array with Itself (Easy)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Concatenation of Array**](https://leetcode.com/problems/concatenation-of-array/description/)
+
+---
+
 ## Problem Description
 
 Given an integer array `nums` of length `n`, create an array `ans` of length `2n` such that:

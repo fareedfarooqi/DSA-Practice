@@ -1,5 +1,14 @@
 # Insertion Sort List (Medium)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Insertion Sort List**](https://leetcode.com/problems/insertion-sort-list/description/)
+
+---
+
 ## Problem Description
 
 Given the head of a singly linked list, sort the list using **insertion sort**, and return the sorted list's head.

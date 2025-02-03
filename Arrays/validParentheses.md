@@ -1,5 +1,14 @@
 # Valid Parentheses (Easy)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Valid Parentheses**](https://leetcode.com/problems/valid-parentheses/description/)
+
+---
+
 ## Problem Description
 
 Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['`, and `']'`, determine if the input string is valid.

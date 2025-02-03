@@ -1,5 +1,14 @@
 # Design Linked List (Medium)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Design Linked List**](https://leetcode.com/problems/design-linked-list/description/)
+
+---
+
 ## Problem Description
 
 Design your implementation of the linked list. You can choose to use a **singly** or **doubly** linked list. A node in a singly linked list should have two attributes:

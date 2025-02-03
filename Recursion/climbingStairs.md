@@ -1,9 +1,13 @@
 # Climbing Stairs (Easy)
 
-**Solved**  
-**Easy**  
-**Topics**  
-**Companies**
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Climbing Stairs**](https://leetcode.com/problems/climbing-stairs/description/)
+
+---
 
 ## Problem Description:
 

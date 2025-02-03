@@ -1,5 +1,14 @@
 # 1472. Design Browser History (Medium)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Design Browser History**](https://leetcode.com/problems/design-browser-history/description/)
+
+---
+
 ## Problem Description
 
 You have a browser with one tab where you start on the homepage, and you can:
