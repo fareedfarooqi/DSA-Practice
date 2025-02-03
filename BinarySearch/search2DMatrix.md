@@ -65,7 +65,7 @@ false
 
 ### Python Implementation
 
-- **Time Complexity**: `O(log(m \* n))` OR `O(log(m)) + O(log(n))`
+- **Time Complexity**: `O(log(m * n))` OR `O(log(m)) + O(log(n))`
 
 ```python
 class Solution:
