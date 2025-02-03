@@ -1,5 +1,14 @@
 # Fizz Buzz (Easy)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Fizz Buzz**](https://leetcode.com/problems/fizz-buzz/description/)
+
+---
+
 ## Problem Description
 
 Given an integer `n`, return a **string array** `answer` (1-indexed) where:

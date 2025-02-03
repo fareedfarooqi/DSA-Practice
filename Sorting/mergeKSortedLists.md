@@ -1,5 +1,14 @@
 # Merge k Sorted Lists (Hard)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Merge k Sorted Lists**](https://leetcode.com/problems/merge-k-sorted-lists/description/)
+
+---
+
 ## Problem Description
 
 You are given an array of **k** linked lists, where each linked list is sorted in **ascending order**.

@@ -1,5 +1,14 @@
 # Remove Element from Array (Easy)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Remove Element**](https://leetcode.com/problems/remove-element/description/)
+
+---
+
 ## Problem Description
 
 Given an integer array `nums` and an integer `val`, remove all occurrences of `val` **in-place**.  

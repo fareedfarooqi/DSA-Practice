@@ -1,5 +1,14 @@
 # Sort an Array (Medium)
 
+---
+
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Sort an Array**](https://leetcode.com/problems/sort-an-array/description/)
+
+---
+
 ## **Problem Statement**
 
 Given an array of integers `nums`, sort the array in ascending order and return it.
