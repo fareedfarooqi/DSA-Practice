@@ -20,6 +20,8 @@ You must write a solution in **O(log(m \* n))** time complexity.
 
 ## Example 1:
 
+![Screenshot 2025-02-03 at 2 06 27 PM](https://github.com/user-attachments/assets/667d1d5b-6429-4dab-9471-6d9703018081)
+
 **Input:**
 
 ```python
@@ -33,6 +35,8 @@ true
 ```
 
 ## Example 2:
+
+![Screenshot 2025-02-03 at 2 06 45 PM](https://github.com/user-attachments/assets/f8e3d41a-497a-4a89-ae5a-ea7934c81878)
 
 **Input:**
 
@@ -61,7 +65,7 @@ false
 
 ### Python Implementation
 
-- **Time Complexity**: O(log(m \* n)) OR O(log(m)) + O(log(n))
+- **Time Complexity**: `O(log(m \* n))` OR `O(log(m)) + O(log(n))`
 
 ```python
 class Solution:
