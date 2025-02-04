@@ -65,8 +65,6 @@ Return the number that I picked.
 
 ## Code Solutions
 
-### Doubly Linked List
-
 - **Time Complexity**: It is `O(log(n))`.
 
 ```python
