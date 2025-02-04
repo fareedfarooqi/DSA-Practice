@@ -56,6 +56,13 @@ Return the number that I picked.
 **Output**:
 `Output: 1`
 
+## Constraints
+
+- `1 <= n <= 2^31 - 1`
+- `1 <= pick <= n`
+
+---
+
 ## Approach & Algorithm
 
 - The key to completing this question was to notice that this question relies on the **binary search algorithm**.
