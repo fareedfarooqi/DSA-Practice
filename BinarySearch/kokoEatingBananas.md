@@ -80,7 +80,7 @@ piles = [30,11,23,4,20], h = 6
 
 ## Code Solutions
 
-- **Time Complexity**: It is `O(n * log(piles))`.
+- **Time Complexity**: It is `O(n * log(m))` where `m = piles`.
 
 ```python
 class Solution:
