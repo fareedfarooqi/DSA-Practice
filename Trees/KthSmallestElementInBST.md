@@ -19,6 +19,8 @@ Given the `root` of a **binary search tree (BST)** and an integer `k`, return th
 
 ### **Example 1**
 
+<img width="230" alt="Screenshot 2025-02-07 at 5 53 48 PM" src="https://github.com/user-attachments/assets/22735b0d-bcd0-47ce-b59a-08424ae57063" />
+
 **Input:**
 
 ```python
@@ -33,6 +35,8 @@ k = 1
 ```
 
 ### **Example 2**
+
+<img width="418" alt="Screenshot 2025-02-07 at 5 54 32 PM" src="https://github.com/user-attachments/assets/b4570a9f-35d4-427e-a8a0-1faa061b796e" />
 
 **Input:**
 
