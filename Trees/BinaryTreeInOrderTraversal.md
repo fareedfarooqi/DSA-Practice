@@ -35,6 +35,8 @@ root = [1,null,2,3]
 
 ### **Example 2**
 
+<img width="380" alt="Screenshot 2025-02-07 at 5 56 05 PM" src="https://github.com/user-attachments/assets/93a0703b-f88c-4ed6-8b3b-1a0c9a3ac529" />
+
 **Input:**
 
 ```python
