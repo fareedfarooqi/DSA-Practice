@@ -19,6 +19,8 @@ Given the `root` of a binary tree, return the **inorder traversal** of its nodes
 
 ### **Example 1**
 
+<img width="215" alt="Screenshot 2025-02-07 at 5 55 37 PM" src="https://github.com/user-attachments/assets/43eed14b-84ed-4636-8391-784e09dec185" />
+
 **Input:**
 
 ```python
