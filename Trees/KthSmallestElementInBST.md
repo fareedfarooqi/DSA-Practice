@@ -99,7 +99,7 @@ class Solution:
         return myDict["valAtRoot"]
 ```
 
-### Solution 2 (Faster - List Method):
+### Solution 2 (Faster & More Efficient - List Method):
 
 - **Time Complexity:** O(n)
 
