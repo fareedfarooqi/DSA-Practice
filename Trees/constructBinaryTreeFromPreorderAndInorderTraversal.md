@@ -24,6 +24,8 @@ Construct and return the **binary tree**.
 
 ### **Example 1**
 
+![Screenshot 2025-02-08 at 3 08 55 PM](https://github.com/user-attachments/assets/7468f293-28ad-4fee-8d82-4a40ace344a6)
+
 **Input:**
 
 ```python
