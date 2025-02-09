@@ -9,16 +9,18 @@ Here is the link to the problem on LeetCode:
 
 ---
 
-## 📝 Problem Description
+## Problem Description
 
 Given the `root` of a binary tree, return the **level order traversal** of its nodes' values.  
 (i.e., from left to right, level by level).
 
 ---
 
-## 📌 Examples
+## Examples
 
 ### **Example 1**
+
+![Screenshot 2025-02-09 at 12 17 19 PM](https://github.com/user-attachments/assets/1ee3f930-a77e-4f79-867c-ad235bef23d6)
 
 **Input:**
 
