@@ -21,6 +21,8 @@ Return the values of the nodes you can **see**, ordered from **top to bottom**.
 
 ### **Example 1**
 
+![Screenshot 2025-02-10 at 11 55 25 AM](https://github.com/user-attachments/assets/fae2572e-272b-40c6-b60a-0e1489813724)
+
 **Input:**
 
 ```python
@@ -34,6 +36,8 @@ root = [1,2,3,null,5,null,4]
 ```
 
 ### **Example 2**
+
+![Screenshot 2025-02-10 at 11 55 40 AM](https://github.com/user-attachments/assets/70dae89f-c7ec-4de8-9b78-6d6eed120d6e)
 
 **Input:**
 
