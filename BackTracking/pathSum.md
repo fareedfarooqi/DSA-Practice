@@ -21,6 +21,8 @@ A **leaf** is a node with no children.
 
 ### **Example 1**
 
+![Screenshot 2025-02-11 at 12 28 37 PM](https://github.com/user-attachments/assets/a54f7904-2c02-4375-af58-c72d8a2f3c50)
+
 **Input:**
 
 ```python
@@ -38,6 +40,8 @@ true
 The root-to-leaf path with the target sum is shown in the tree.
 
 ### **Example 2**
+
+![Screenshot 2025-02-11 at 12 28 55 PM](https://github.com/user-attachments/assets/ec7c9de3-ab21-4209-b573-656525d5363e)
 
 **Input:**
 
