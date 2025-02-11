@@ -60,7 +60,10 @@ nums = [0]
 
 - I utilised backtracking (brute force method) of DFS to solve this problem.
 - The key to solving this question was to understand that at each point we have the choice **to include a number** or **NOT** to include a number. As such we have `2^n` choices at each index whilst going through the array.
-- We can break up this strategy and make it into a decision tree as shown in the example below. We will traverse each branch in our approach in order to get all possible subsets.
+- We can break up this strategy and make it into a decision tree as shown in the example below (from Neetcode). We will traverse each branch in our approach in order to get all possible subsets.
+
+![Screenshot 2025-02-11 at 1 21 25 PM](https://github.com/user-attachments/assets/555414e8-e9be-4749-9174-6d9c1a82721c)
+
 
 ## Code Implementation
 
