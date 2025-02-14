@@ -1,8 +1,15 @@
-# Kth Largest Element in a Stream
+# Kth Largest Element in a Stream (Easy)
 
 ---
 
-## 🔗 Problem Statement
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Kth Largest Element in a Stream**](https://leetcode.com/problems/kth-largest-element-in-a-stream/description/)
+
+---
+
+## Problem Statement
 
 You are part of a university admissions office and need to keep track of the `k`th highest test score from applicants in real-time. This helps to determine cut-off marks for interviews and admissions dynamically as new applicants submit their scores.
 
