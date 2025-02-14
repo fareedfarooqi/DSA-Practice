@@ -30,6 +30,8 @@ You must return the `k` closest points in **any order**.
 
 ## **Example 1**
 
+![Screenshot 2025-02-14 113003](https://github.com/user-attachments/assets/720053f1-8a06-48b2-b5f0-8de0b45e0148)
+
 **Input:**
 ```python
 points = [[1,3],[-2,2]]
