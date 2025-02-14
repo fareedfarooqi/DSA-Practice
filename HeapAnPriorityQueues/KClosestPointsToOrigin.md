@@ -30,7 +30,7 @@ You must return the `k` closest points in **any order**.
 
 ## **Example 1**
 
-![Screenshot 2025-02-14 113003](https://github.com/user-attachments/assets/720053f1-8a06-48b2-b5f0-8de0b45e0148)
+![1](https://github.com/user-attachments/assets/f082e24d-32f1-4ae0-88d9-7c3c0f362311)
 
 **Input:**
 ```python
