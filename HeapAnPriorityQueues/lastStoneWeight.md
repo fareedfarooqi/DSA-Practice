@@ -1,8 +1,15 @@
-# Last Stone Weight
+# Last Stone Weight (Easy)
 
 ---
 
-## 🔗 Problem Statement
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Last Stone Weight**](https://leetcode.com/problems/last-stone-weight/description/)
+
+---
+
+## Problem Statement
 
 You are given an array of integers `stones` where `stones[i]` is the weight of the `i`th stone.
 
