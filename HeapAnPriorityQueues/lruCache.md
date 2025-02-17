@@ -1,8 +1,15 @@
-# LRU Cache
+# LRU Cache (Medium)
 
 ---
 
-## 🔗 Problem Statement
+## 🔗 LeetCode Link
+
+Here is the link to the problem on LeetCode:  
+[**Insert into a Binary Search Tree**](https://leetcode.com/problems/lru-cache/)
+
+---
+
+## Problem Statement
 
 Design a data structure that follows the constraints of a **Least Recently Used (LRU) cache**.
 
