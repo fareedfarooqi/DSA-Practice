@@ -77,13 +77,13 @@ s = "1326#"
 - We loop until our `i` pointer has reached the end of the string `s`.
   - Through the loop we check if the third character (`i + 2`) is equal to `#`. This tells us if we are now going to be processing a double-digit element i.e., `10#`. If this is the case we simply find the corresponding value for the key `10` in our `dic` hash map and append it to our `result_str`.
   - Otherwise we know that we are processing a single-digit element such as `1-9`. We similarly get the key-value mapping from our `dic` hash map and append it to our `result_str`.
-- **Note:** Problem with our first solution below is that in Python, strings are immutable, so "result_str += ..." takes O(n) over multiple iterations.
+- **Note:** Problem with our first solution below is that in Python, strings are immutable, so "result_str += ..." takes O(n) over multiple iterations as it creates a new copy of the result string every iteration (meaning it loops over every character `n` times). So in solution 2, I utilise lists and the `join()` function to speed up the solution.
 
 ## Code Implementation
 
-### Solution:
+### Solution 1 (Slower):
 
-- **Time Complexity:** O(n).
+- **Time Complexity:** O(n^2).
 
 ```python
 import string
@@ -102,4 +102,27 @@ class Solution:
                 i += 1
 
         return result_str
+```
+
+### Solution 2 (Faster):
+
+- **Time Complexity:** O(n).
+
+```python
+import string
+
+class Solution:
+    def freqAlphabets(self, s: str) -> str:
+        dic = dict(zip(range(1, 27), string.ascii_lowercase))
+        i, result = 0, []
+
+        while i < len(s):
+            if i + 2 < len(s) and s[i + 2] == "#":
+                result.append(dic[int(s[i:i + 2])])
+                i += 3
+            else:
+                result.append(dic[int(s[i])])
+                i += 1
+
+        return "".join(result)
 ```
