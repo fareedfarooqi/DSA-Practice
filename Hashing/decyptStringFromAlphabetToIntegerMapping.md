@@ -70,7 +70,7 @@ s = "1326#"
 
 ## Approach & Algorithm
 
-- I utilised a hash map to solve this problem.
+- I utilised a hash map to solve this leetcode problem.
 - I created a hash map `dic` whereby I zip up two independent lists of numbers from `[1, ..., 26]` and characters from `[a, ..., z]`. The key of our hash map are the numbers and the values are the letters.
   - `string.ascii_lowercase` simply returns a string of charcters from `a-z`.
 - I've also created an `i` pointer that keeps track of where we are whilst looping through our `s` string. I also have a `result_str` which we use to append characters that pass the conditions.
