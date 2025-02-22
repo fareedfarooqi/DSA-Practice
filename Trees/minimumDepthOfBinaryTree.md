@@ -21,6 +21,8 @@ The minimum depth is the number of nodes along the **shortest path** from the ro
 
 ## **Example 1**
 
+![Screenshot 2025-02-22 at 10 09 33 PM](https://github.com/user-attachments/assets/84dab0ac-eda8-4c4c-af3a-709e7cec771a)
+
 **Input:**
 
 ```python
