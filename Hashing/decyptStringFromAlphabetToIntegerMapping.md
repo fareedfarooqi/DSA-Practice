@@ -1,4 +1,4 @@
-# Decrypt String from Alphabet to Integer Mapping
+# Decrypt String from Alphabet to Integer Mapping (Easy)
 
 ---
 
