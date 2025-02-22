@@ -85,7 +85,7 @@ kthLargest.add(9);  # return 8
 
 ## Approach & Algorithm
 
-- I have utilised the `heapq` module from python to assist me with this LC problem.
+- I have utilised the `heapq` module from python to assist me with solving this LC problem.
 - I used `heapq.heapify(nums)` to create a heap-style structure in `O(n)` time.
 - I always maintained at most `k` elements in the heap. If at any point there are more than `k` elements in the heap whilst we **initialise** or **add** to the heap, I simply remove the smalleest elements (root) from the heap. This maintains a heap where we have `k` number of largest elements.
 - The root has the kth largest element.
