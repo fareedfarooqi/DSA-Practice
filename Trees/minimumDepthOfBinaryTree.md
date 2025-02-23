@@ -58,7 +58,7 @@ root = [2,null,3,null,4,null,5,null,6]
 
 ## Approach & Algorithm
 
-- The trick to solving this question was to utilise a **Breadth-First-Search** (BFS).
+- The trick to solving this question was to utilise a **Breadth-First-Search** (BFS) carefully.
 - I also incorporated the use of a queue (a double-ended queue in particular).
 - I done level-order traversal in both solutions.
   - In the first solution I also kept a `depth` set which simply added the current depth level in the tree once we reached a child node during traversal. I would then simply return the minimum value in this set.
