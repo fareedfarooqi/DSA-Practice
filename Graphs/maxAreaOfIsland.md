@@ -87,7 +87,7 @@ grid = [[0,0,0,0,0,0,0,0]]
 
 ### Solution:
 
-- **Time Complexity:** O(N \* M).
+- **Time Complexity (A bit slow):** O(N \* M).
 
 ```python
 class Solution:
