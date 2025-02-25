@@ -23,7 +23,6 @@ Return the **maximum area** of an island in `grid`. If there is no island, retur
 
 <img width="621" alt="Screenshot 2025-02-25 at 10 25 38 PM" src="https://github.com/user-attachments/assets/f0af389f-5566-4421-bdaf-2c6e03686347" />
 
-
 **Input:**
 
 ```python
