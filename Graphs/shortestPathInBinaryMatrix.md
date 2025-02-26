@@ -101,9 +101,9 @@ The starting cell (0,0) is blocked (1), so no path is possible.
 
 ## Code Implementation
 
-### Solution:
+### Solution One (Fatser):
 
-- **Time Complexity (A bit slow):** O(N \* M).
+- **Time Complexity:** O(n^2).
 
 ```python
 from collections import deque
@@ -138,6 +138,50 @@ class Solution:
 
                     queue.append((newRow, newCol))
                     visited.add((newRow, newCol))
+
+            length += 1
+
+        return -1
+```
+
+### Solution Two (Slower - More Inefficient):
+
+- **Time Complexity (Slower):** O(n^2).
+
+```python
+from collections import deque
+
+class Solution:
+    def shortestPathBinaryMatrix(self, grid: List[List[int]]) -> int:
+        ROWS, COLS = len(grid), len(grid[0])
+
+        if (grid[0][0] == 1 or grid[ROWS - 1][COLS - 1]):
+            return -1
+
+        visited = set()
+        queue = deque()
+        queue.append((0, 0))
+        visited.add((0, 0))
+
+        length = 1
+
+        while queue:
+            for i in range(len(queue)):
+                curRow, curCol = queue.popleft()
+
+                if curRow == ROWS - 1 and curCol == COLS - 1:
+                    return length
+
+                neighbours = [[0, 1], [0, -1], [1, 0], [-1, 0],
+                                [-1, -1], [-1, 1], [1, -1], [1, 1]] # Inefficient as we just declare these over and over.
+
+                for dr, dc in neighbours:
+                    if (min(curRow + dr, curCol + dc) < 0 or curRow + dr == ROWS
+                        or curCol + dc == COLS or (curRow + dr, curCol + dc) in visited or
+                        grid[curRow + dr][curCol + dc] == 1):
+                        continue
+                    queue.append((curRow + dr, curCol + dc))
+                    visited.add((curRow + dr, curCol + dc))
 
             length += 1
 
