@@ -23,6 +23,8 @@ A **clear path** in a binary matrix is a path from the **top-left cell** `(0,0)`
 
 ## **Example 1**
 
+<img width="624" alt="Screenshot 2025-02-26 at 6 27 18 PM" src="https://github.com/user-attachments/assets/a1f243a2-616e-4de3-ac24-d649734cf162" />
+
 **Input:**
 
 ```python
