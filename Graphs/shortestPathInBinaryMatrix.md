@@ -170,7 +170,7 @@ class Solution:
         length = 1
 
         while queue:
-            for i in range(len(queue)):
+            for i in range(len(queue)): # 'i' should be '_' to indicate we don't utilise it.
                 curRow, curCol = queue.popleft()
 
                 if curRow == ROWS - 1 and curCol == COLS - 1:
@@ -182,7 +182,7 @@ class Solution:
                 for dr, dc in neighbours:
                     if (min(curRow + dr, curCol + dc) < 0 or curRow + dr == ROWS
                         or curCol + dc == COLS or (curRow + dr, curCol + dc) in visited or
-                        grid[curRow + dr][curCol + dc] == 1):
+                        grid[curRow + dr][curCol + dc] == 1): # This is confusing we need to rewrite it.
                         continue
                     queue.append((curRow + dr, curCol + dc))
                     visited.add((curRow + dr, curCol + dc))
