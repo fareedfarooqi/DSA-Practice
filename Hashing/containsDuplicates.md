@@ -15,7 +15,7 @@ Given an integer array `nums`, return **true** if any value appears **at least t
 
 ---
 
-## **Examples**
+## **Examples:**
 
 ### **Example 1**
 
