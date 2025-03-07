@@ -2,7 +2,7 @@
 
 ---
 
-## 🔗 LeetCode Link
+## 🔗 LeetCode Link:
 
 Here is the link to the problem on LeetCode:  
 [**Shortest Path in Binary Matrix**](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
