@@ -103,7 +103,7 @@ Since there are already no fresh oranges at minute 0, the answer is just 0.
 
 ### Solution:
 
-- **Time Complexity:** O(m x n).
+- **Time Complexity:** O(M x N).
 
 ```python
 from collections import deque
