@@ -54,7 +54,7 @@ There are 4 nodes in the graph:
 - 4th node's neighbors are [1,3]
 ```
 
-## **Example 2**
+## **Example 2:**
 
 **Input:**
 
