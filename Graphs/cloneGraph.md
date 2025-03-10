@@ -72,7 +72,7 @@ adjList = [[]]
 The graph consists of one node (val = 1) with no neighbors.
 ```
 
-## **Example 3**
+## **Example 3:**
 
 **Input:**
 
