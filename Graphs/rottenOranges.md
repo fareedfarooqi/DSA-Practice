@@ -64,7 +64,7 @@ The orange in the bottom left corner `(row 2, column 0)` is never rotten,
 because rotting only happens 4-directionally.
 ```
 
-## **Example 3:**
+## **Example 3**
 
 **Input:**
 

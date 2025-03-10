@@ -32,7 +32,7 @@ The input graph is given as an adjacency list.
 
 ---
 
-## **Example 1**
+## **Example 1:**
 
 **Input:**
 
