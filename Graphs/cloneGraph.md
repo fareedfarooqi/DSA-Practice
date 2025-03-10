@@ -32,7 +32,7 @@ The input graph is given as an adjacency list.
 
 ---
 
-## **Example 1:**
+## **Example 1**
 
 **Input:**
 
@@ -54,7 +54,7 @@ There are 4 nodes in the graph:
 - 4th node's neighbors are [1,3]
 ```
 
-## **Example 2:**
+## **Example 2**
 
 **Input:**
 
@@ -72,7 +72,7 @@ adjList = [[]]
 The graph consists of one node (val = 1) with no neighbors.
 ```
 
-## **Example 3:**
+## **Example 3**
 
 **Input:**
 
