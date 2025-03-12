@@ -80,8 +80,11 @@ Since this forms a cycle, it is impossible to finish all courses.
 
 - I utilised an adjacency list DFS implementation to solve this problem.
 - I first and foremost created a `preMap` which essentially stores the node as a key which has the value of a list of other nodes to indicate where the key node is directed towards, i.e., what are the nodes prerequisites.
-- We have an entry point into the graph which is via the final loop in the solution below. However from there we have a gateway into traversing the graph. if at any point we observe that the node being inserted into the `visited` set we know we have found a duplicate and as such we return false.
+- We have an entry point into the graph which is via the final loop in the solution below. However, from there we have a gateway into traversing the graph. if at any point we observe that the node being inserted into the `visited` set we know we have found a duplicate and as such we return false.
 - `Solution One` is the optimised working solution as it has a memoized approach. In essence we clear the prerequisites of a given node from the `preMap` if we found no cycle whilst traversing it's path. The reason being this helps us by not having to recompute each and every node repeatedly.
+- Please view my drawn out approach on whiteboard below:
+
+<img width="973" alt="Screenshot 2025-03-12 at 10 46 35 PM" src="https://github.com/user-attachments/assets/02245f29-1281-492c-961a-0055984deafc" />
 
 ## Code Implementation
 
