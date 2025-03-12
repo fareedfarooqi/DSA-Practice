@@ -87,7 +87,7 @@ The starting cell (0,0) is blocked (1), so no path is possible.
 
 ---
 
-## Approach & Algorithm
+## Approach & Algorithm:
 
 - I utilised a Matrix BFS to solve this question.
 - The major trick to this question was understanding that once we are at a node, we can move in **8** directions. These include:
