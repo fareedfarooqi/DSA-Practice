@@ -34,6 +34,7 @@ m = 3, n = 7
 
 ```python
 28
+```
 
 ![Screenshot 2025-03-15 at 9 56 54 PM](https://github.com/user-attachments/assets/7b204312-3280-4b0f-960a-ea784e15ab3e)
 
