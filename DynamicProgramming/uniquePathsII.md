@@ -38,6 +38,7 @@ obstacleGrid = [[0,0,0],
 **Output:**
 # Unique Paths II (Medium)
 
+
 ---
 
 ## 🔗 LeetCode Link
@@ -66,6 +67,8 @@ The test cases are generated so that the answer will be **≤ 2 * 10⁹**.
 
 ## **Example 1**
 
+![1](https://github.com/user-attachments/assets/60b288c7-9e2e-402f-b3a3-775b62b06b99)
+
 **Input:**
 ```python
 obstacleGrid = [[0,0,0],
@@ -84,8 +87,12 @@ There are two ways to reach the bottom-right corner:
 
 1. `Right -> Right -> Down -> Down`
 2. `Down -> Down -> Right -> Right`
+   
+![IMG_3412](https://github.com/user-attachments/assets/73e40b2d-c67e-48cb-83a9-e68668c2e6bd)
 
 ## **Example 2**
+
+![2](https://github.com/user-attachments/assets/30b4ad56-2f53-49f1-b739-4220e5f6baa1)
 
 **Input:**
 ```python
