@@ -108,3 +108,20 @@ class Solution:
         return dp[0][0]
 ```
 
+![IMG_3416](https://github.com/user-attachments/assets/39da5eef-182f-4f0f-bb70-00b79f2797e7)
+
+![IMG_3419](https://github.com/user-attachments/assets/da2fbbf0-07a1-42b3-9084-935d5ac0ab41)
+
+![IMG_3418](https://github.com/user-attachments/assets/1d111b67-cb63-4409-81e5-98ae481a3434)
+
+![IMG_3415](https://github.com/user-attachments/assets/724c5d00-fac0-498b-86a7-1f5e5fb5002c)
+
+![IMG_3417](https://github.com/user-attachments/assets/1bda3745-a989-4976-8dc7-037125ec9b5e)
+
+![IMG_3422](https://github.com/user-attachments/assets/e520265b-1ec6-43b4-bbc3-35225035b1d6)
+
+![IMG_3420](https://github.com/user-attachments/assets/3c5fe957-0c0d-412d-aabc-13c70efc93ec)
+
+![IMG_3421](https://github.com/user-attachments/assets/113faf93-dda3-42e3-8c67-0fdfb8357595)
+
+![IMG_3423](https://github.com/user-attachments/assets/95b4ac83-df0b-4f9c-9613-63b87aab2e78)
