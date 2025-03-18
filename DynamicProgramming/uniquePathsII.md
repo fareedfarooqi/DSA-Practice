@@ -120,7 +120,7 @@ obstacleGrid = [[0,1],
 - I loop thorugh in reverse order starting from the final square in the last row. We build our way back up.
 - This code takes a while to understand. Refer to diagrams attached above and carry out the algorithm physically on an example.
 
-## Code Implementation
+## Code Implementation:
 
 ### Solution:
 
