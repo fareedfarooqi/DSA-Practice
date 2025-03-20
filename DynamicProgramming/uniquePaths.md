@@ -76,7 +76,7 @@ From the top-left corner, there are a total of 3 ways to reach the bottom-right 
   - Bottom-Up Approach: Good space complexity.
 - In solution one below, I've utilised a Bottom-Up Approach. Essentially I start from the very last square (set it to 1) and work out each row. It is important to note that the way to find the value (the number of ways to get to the end) from a particular square is by adding the number in the right square and the bottom square. This is why I've utilised a `prevRow` and `curRow` to help me keep track of rows. We only need two rows at a time to solve this particular problem so there is no need to cache/store an entire grid like we would have done with a top-down approach. We slowly work our way up from the last square of each row and move one column left at a time and find how many solutions for each and every sqaure in a particular row before moving to the row above the current row. Please view the diagrams above for a complete understanding.
 
-## Code Implementation
+## Code Implementation:
 
 ### Solution One (Fast: Bottom-Up Approach):
 
