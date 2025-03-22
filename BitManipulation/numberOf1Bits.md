@@ -68,12 +68,9 @@ The input binary string `1111111111111111111111111111101` has a total of thirty 
 - `1 <= n <= 2³¹ - 1`
 
 ---
+
 ## Approach & Algorithm:
 
-
-## Code Implementation
-
-### Solution:
 - I've utilised bit manipulation to solve this question.
 - The trick to doing this question is understanding the fact that we can use the logical operators `&` and `<<`.
 - We can loop through the bits of the number `n` until we get `n == 0`. We do a logical `&` with `n` and `1` to see if the last bit is 1 or not. If it is 1 we know that we have found a 1 bit and can increment our count.
@@ -84,6 +81,10 @@ The input binary string `1111111111111111111111111111101` has a total of thirty 
     ---------
     0 0 0 0 1
 ```
+
+## Code Implementation
+
+### Solution:
 
 - **Time Complexity:** `O(log(n))` --> We divide by 2 for each iteration (halving the problem space)
 
