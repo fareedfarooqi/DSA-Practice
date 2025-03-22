@@ -68,7 +68,7 @@ The input binary string `1111111111111111111111111111101` has a total of thirty 
 - `1 <= n <= 2³¹ - 1`
 
 ---
-## Approach & Algorithm
+## Approach & Algorithm:
 
 
 ## Code Implementation
