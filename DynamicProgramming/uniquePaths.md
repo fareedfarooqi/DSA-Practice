@@ -2,7 +2,7 @@
 
 ---
 
-## 🔗 LeetCode Link
+## 🔗 LeetCode Link:
 
 Here is the link to the problem on LeetCode:  
 [**62. Unique Paths**](https://leetcode.com/problems/unique-paths/)
