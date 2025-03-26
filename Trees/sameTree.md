@@ -21,6 +21,8 @@ Two binary trees are considered the same if:
 
 ## **Example 1**
 
+![1](https://github.com/user-attachments/assets/47a38639-7f7d-4bc2-ac63-fcf125faaa75)
+
 **Input:**
 ```python
 p = [1, 2, 3]
@@ -34,6 +36,8 @@ true
 
 ## **Example 2**
 
+![2](https://github.com/user-attachments/assets/5dc42fe6-000d-4e78-af00-a74e7c46ac72)
+
 **Input:**
 ```python
 p = [1, 2]
@@ -46,6 +50,8 @@ false
 ```
 
 ## **Example 3**
+
+![3](https://github.com/user-attachments/assets/4af7166f-c8d3-484f-90ae-68692a024885)
 
 **Input:**
 ```python
