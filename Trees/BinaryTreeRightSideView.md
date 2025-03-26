@@ -2,7 +2,7 @@
 
 ---
 
-## 🔗 LeetCode Link
+## 🔗 LeetCode Link:
 
 Here is the link to the problem on LeetCode:  
 [**Binary Tree Right Side View**](https://leetcode.com/problems/binary-tree-right-side-view/)
