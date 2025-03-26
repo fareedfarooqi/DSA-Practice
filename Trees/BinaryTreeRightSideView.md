@@ -9,7 +9,7 @@ Here is the link to the problem on LeetCode:
 
 ---
 
-## Problem Description
+## Problem Description:
 
 Given the `root` of a binary tree, imagine yourself standing on the **right side** of it.
 
