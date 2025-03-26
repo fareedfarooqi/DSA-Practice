@@ -71,7 +71,7 @@ Its reversed binary is `10111111111111111111111111111111`, which equals `3221225
 - We loop through all `32` bits and for each bit we shift it right by `i` bits (0 to 32 bits). We `&` it with `1` to get the last value.
 - After this we construct our `res` by appending each `bit` previously and shift it left by `31 - i` bits. So if the bit is `1` and `i = 0`, then `res = 1000 0000 0000 0000 0000 0000 0000 0000`. So if the bit is `1` and `i = 1`, then `res = 1100 0000 0000 0000 0000 0000 0000 0000`.
 
-## Code Implementation
+## Code Implementation:
 
 ### Solution One:
 
