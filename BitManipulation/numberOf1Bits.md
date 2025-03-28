@@ -82,7 +82,7 @@ The input binary string `1111111111111111111111111111101` has a total of thirty 
     0 0 0 0 1
 ```
 
-## Code Implementation
+## Code Implementation:
 
 ### Solution:
 
