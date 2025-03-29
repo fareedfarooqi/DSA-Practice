@@ -63,7 +63,7 @@ n = 2147483645
 **Explanation:**
 The input binary string `1111111111111111111111111111101` has a total of thirty set bits.
 
-## Constraints
+## Constraints:
 
 - `1 <= n <= 2³¹ - 1`
 
