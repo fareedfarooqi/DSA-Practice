@@ -102,7 +102,6 @@ class Solution:
         prevSign, maxSubArr = "", 1
 
         while rightPtr < len(arr):
-            print(rightPtr)
             if arr[rightPtr - 1] < arr[rightPtr] and prevSign != "<":
                 # Previous sign cannot be less than again.
                 # We set 'maxSubArr' to be the size of the maximum length of subarray.
