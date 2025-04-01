@@ -76,6 +76,8 @@ false
 - In the solution below the line `if rightPtr - leftPtr > k:` just checks this condition essentially `abs(i - j) <= k` (inverted).
 - Please view my whiteboard diagram for a visual representation.
 
+![IMG_8300](https://github.com/user-attachments/assets/1c67963c-eaaa-4c46-a4b2-6aae8ea72eb3)
+
 ## Code Implementation:
 
 ### Solution One (Sliding Window Algorithm):
