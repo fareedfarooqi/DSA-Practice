@@ -76,7 +76,7 @@ nums = [-3, -2, -3]
 
 ---
 
-## Approach & Algorithm
+## Approach & Algorithm:
 
 - I have used a modified version of **Kadane's Algorithm** to solve this problem efficiently.
 - The problem involves two main cases to consider:
