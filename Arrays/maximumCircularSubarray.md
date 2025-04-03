@@ -9,7 +9,7 @@ Here is the link to the problem on LeetCode:
 
 ---
 
-## **Problem Statement**
+## **Problem Statement:**
 
 Given a **circular integer array** `nums` of length `n`, return the **maximum possible sum** of a non-empty subarray of `nums`.
 
