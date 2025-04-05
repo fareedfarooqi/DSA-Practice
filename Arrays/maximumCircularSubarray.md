@@ -2,7 +2,7 @@
 
 ---
 
-## 🔗 LeetCode Link:
+## 🔗 LeetCode Link
 
 Here is the link to the problem on LeetCode:  
 [**918. Maximum Sum Circular Subarray**](https://leetcode.com/problems/maximum-sum-circular-subarray/)
