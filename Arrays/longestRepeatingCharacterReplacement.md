@@ -89,10 +89,11 @@ countOfChars = {
 ```
 
 - As we can see the `mostFrequentCharCount` is `3` with the most frequently occurring character being `A`. So in our window we do `lengthOfCurWindow - mostFrequentCharCount` --> `4 - 3 = 1`. Then we can check if `1` is less than or equal to `k` (let `k = 1`). This will mean that we need to replace at most one character in our current window i.e., change `B` to an `A` giving us `AAAA`. This is a valid window as our window contains all the same characters whilst ensuring that we changed at most `k` characters.
+- **NOTE:** Please note solution two is much more faster than solution one. This is due to the fact that in solution two we manually keep track of the most frequent character count (`mostFrequentCharCount`) as opposed to calling the `max()` function in solution one in every iteration. The `max()` function slows down computation.
 
 ## Code Implementation:
 
-### Solution One (Sliding Window Algorithm):
+### Solution One (SLOWER):
 
 - **Time Complexity:** `O(26 * n)` --> `O(n)`
 
@@ -114,6 +115,44 @@ class Solution:
             # We could write: mostFrequentCharCount = countOfChars[mostFrequentChar]
 
             mostFrequentCharCount = max(countOfChars.values())
+            lengthOfCurWindow = R - L + 1
+
+            if lengthOfCurWindow - mostFrequentCharCount <= k:
+                # Means we have to replace at most 'charCount' characters.
+                length = max(length, lengthOfCurWindow)
+                continue
+
+            # Otherwise it means we cannot replace characters within 'k' counts.
+            # We must slide the window and adjust the hashmap counts of the characters in the window.
+
+            countOfChars[s[L]] -= 1
+            L += 1
+
+        return length
+```
+
+### Solution Two (FASTEST):
+
+- **Time Complexity:** `O(n)`
+
+```python
+from collections import defaultdict
+
+class Solution:
+    def characterReplacement(self, s: str, k: int) -> int:
+        # We don't actually need to physically replace the character in the string.
+        countOfChars = defaultdict(int)
+        mostFrequentCharCount = 0
+        L = 0
+        length = 0
+
+        for R in range(len(s)):
+            countOfChars[s[R]] += 1
+
+            # Get the count of the least frequently occuring character in the window.
+            if countOfChars[s[R]] > mostFrequentCharCount:
+                mostFrequentCharCount = countOfChars[s[R]]
+
             lengthOfCurWindow = R - L + 1
 
             if lengthOfCurWindow - mostFrequentCharCount <= k:
