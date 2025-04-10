@@ -68,7 +68,7 @@ height = [1,1]
 - The key to solving this question is to move the pointers appropriately. We shift the `L` pointer up by one if the value that `L` points to is smaller than the value that `R` points to, i.e., `height[L] < height[R]`. The opposite case would require us to shift the `R` pointer down by one.
 - Utilising this approach we can in essence find the max area in one-pass.
 
-## Code Implementation
+## Code Implementation:
 
 ### Solution One (Fastest):
 
