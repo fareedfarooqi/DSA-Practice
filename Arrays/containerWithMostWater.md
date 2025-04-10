@@ -23,6 +23,9 @@ Return the maximum amount of water a container can store.
 
 ## **Example 1**
 
+![1](https://github.com/user-attachments/assets/72b75bc3-3c86-4f63-a527-0178f54fda04)
+
+
 **Input:**
 ```python
 height = [1,8,6,2,5,4,8,3,7]
