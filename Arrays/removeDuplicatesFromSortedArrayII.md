@@ -81,7 +81,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 ---
 
-## Approach & Algorithm
+## Approach & Algorithm:
 
 - Solution One is significantly faster and teh optimal approach to solving this question. We use some form of a two-pointer approach in a one-pass manner to solve this question.
 - In particular, we loop over the `nums` array and we check for the conditions:
