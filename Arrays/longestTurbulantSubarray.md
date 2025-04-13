@@ -2,7 +2,7 @@
 
 ---
 
-## 🔗 LeetCode Link
+## 🔗 LeetCode Link:
 
 Here is the link to the problem on LeetCode:  
 [**978. Longest Turbulent Subarray**](https://leetcode.com/problems/longest-turbulent-subarray/)
