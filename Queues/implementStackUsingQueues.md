@@ -66,7 +66,7 @@ We will use **two queues** to solve this problem.
 
 ## Code Implementation
 
-### Python Implementation
+### Solution One
 
 - **Time Complexity:** O(1) --> For all methods.
 
@@ -97,6 +97,81 @@ class MyStack:
 
     def empty(self) -> bool:
         return True if len(self.queueOne) == 0 else False
+
+
+# Your MyStack object will be instantiated and called as such:
+# obj = MyStack()
+# obj.push(x)
+# param_2 = obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.empty()
+```
+
+### Solution Two
+
+- **Time Complexity:** O(1) --> For all methods.
+
+```python
+from collections import deque
+
+class MyStack:
+
+    def __init__(self):
+        self.queueOne = deque()
+        self.queueTwo = deque()
+
+    def push(self, x: int) -> None:
+        if len(self.queueOne) == 0 and len(self.queueTwo) == 0:
+            self.queueOne.append(x)
+        elif len(self.queueOne) > 0 and len(self.queueTwo) == 0:
+            self.queueOne.append(x)
+        elif len(self.queueTwo) > 0 and len(self.queueOne) == 0:
+            self.queueTwo.append(x)
+
+    def pop(self) -> int:
+        if len(self.queueOne) > 0:
+            # This is the activie queue.
+            for i in range(len(self.queueOne) - 1):
+                self.queueTwo.append(self.queueOne.popleft())
+            
+            element = self.queueOne.pop()
+            return element
+        
+        elif len(self.queueTwo) > 0:
+            for i in range(len(self.queueTwo) - 1):
+                self.queueOne.append(self.queueTwo.popleft())
+
+            element = self.queueTwo.pop()
+            return element
+        
+
+    def top(self) -> int:
+        if len(self.queueOne) > 0:
+            # This is the activie queue.
+            for i in range(len(self.queueOne) - 1):
+                self.queueTwo.append(self.queueOne.popleft())
+            
+            element = self.queueOne.pop()
+            self.queueTwo.append(element)
+
+            return element
+        
+        elif len(self.queueTwo) > 0:
+            for i in range(len(self.queueTwo) - 1):
+                self.queueOne.append(self.queueTwo.popleft())
+            
+            element = self.queueTwo.pop()
+            self.queueOne.append(element)
+
+            return element
+        
+
+    def empty(self) -> bool:
+        if not self.queueOne and not self.queueTwo:
+            return True
+        
+        return False
+        
 
 
 # Your MyStack object will be instantiated and called as such:
