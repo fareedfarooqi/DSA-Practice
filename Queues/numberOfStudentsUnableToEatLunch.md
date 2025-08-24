@@ -68,7 +68,7 @@ Return the number of students who are unable to eat.
 
 ## Code Solutions
 
-### Treating 'Students' as a Queue
+### Solution One - Treating 'Students' as a Queue
 
 - **Time Complexity**: It is `O(n^2)`.
 
@@ -94,4 +94,38 @@ class Solution:
                 break
 
         return len(students)
+```
+
+### Solution Two - Deque
+
+```python
+from collections import deque
+
+class Solution:
+    def countStudents(self, students: List[int], sandwiches: List[int]) -> int:
+        # Convert the students to a queue.
+        studentsQueue = deque(students)
+        sandwichesQueue = deque(sandwiches)
+        print(f"{studentsQueue} -- {sandwichesQueue}")
+
+        while True:
+            # Compare the top level values.
+            if len(studentsQueue) == 0 or len(sandwichesQueue) == 0:
+                return 0
+
+            if studentsQueue[0] == sandwichesQueue[0]:
+                studentsQueue.popleft()
+                sandwichesQueue.popleft()
+            else:
+                # Implies student does not like this particular sandwich.
+                setOfStudents = set(studentsQueue)
+
+                if len(setOfStudents) == 1:
+                    return len(studentsQueue)
+                
+                # Otherwise we carry on.
+                studentThatDidNotLikeSandwich = studentsQueue.popleft()
+                studentsQueue.append(studentThatDidNotLikeSandwich)
+        
+        return len(studentsQueue)
 ```
