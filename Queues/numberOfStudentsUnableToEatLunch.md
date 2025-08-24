@@ -106,7 +106,6 @@ class Solution:
         # Convert the students to a queue.
         studentsQueue = deque(students)
         sandwichesQueue = deque(sandwiches)
-        print(f"{studentsQueue} -- {sandwichesQueue}")
 
         while True:
             # Compare the top level values.
