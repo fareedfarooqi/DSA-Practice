@@ -131,3 +131,32 @@ class Solution:
 
         return state[1]
 ```
+
+### Solution 3 (Clean Code - Instance Attr):
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def __init__(self):
+        self.count = 0
+        self.kthSmallestVal = -1
+
+    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+        if not root:
+            return -1
+
+        self.kthSmallest(root.left, k)
+
+        if self.count < k:
+            self.count += 1
+            self.kthSmallestVal = root.val
+        
+        self.kthSmallest(root.right, k)
+
+        return self.kthSmallestVal
+```
