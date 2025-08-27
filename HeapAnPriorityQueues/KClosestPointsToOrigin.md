@@ -136,7 +136,7 @@ class Solution:
 ### Solution Two - Pure Heap Approach
 
 - **Time Complexity:** O(n \* log(k))
-- **Note:** More Space Efficient.
+- **Note:** More Space Efficient. Also a heap in python can store a tuple too. So this means we can store (distance, point) in heap. Note heap sorts on the first element.
 
 ```python
 import heapq
@@ -165,3 +165,4 @@ class Solution:
         
         return closestCoordinates
 ```
+
