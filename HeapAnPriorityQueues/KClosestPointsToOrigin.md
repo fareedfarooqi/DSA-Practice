@@ -161,4 +161,29 @@ class Solution:
         return closestCoordinates
 ```
 
+### Solution Three - (Faster)
 
+- **Time Complexity:** O(n \* log(k))
+
+```python
+import heapq
+
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        heapOfCoordinatesWithDistances = []
+        
+        for point in points:
+            # Note Euclidean Distance is not squarerooted. This is for performance reasons. Makes it fast.
+            euclideanDistance = (point[0] - 0)**2 + (point[1] - 0)**2
+            heapq.heappush(heapOfCoordinatesWithDistances, (-euclideanDistance, point))
+
+        while len(heapOfCoordinatesWithDistances) > k:
+            heapq.heappop(heapOfCoordinatesWithDistances)
+
+        closestCoordinates = []
+        for i in range(k):
+            shortestDistanceTuple = heapq.heappop(heapOfCoordinatesWithDistances)
+            closestCoordinates.append(shortestDistanceTuple[1])
+        
+        return closestCoordinates
+```
