@@ -47,7 +47,7 @@ k = 2
 
 ## Code Implementation
 
-### Solution (DFS):
+### Solution One - (DFS):
 
 - **Time Complexity:** O(n \* log(k))
 
@@ -71,4 +71,26 @@ class Solution:
             count += 1
 
         return numPopped
+
+```
+
+### Solution Two (Simple)
+
+- **Note:** Same as above just slighly shorter.
+
+- **Time Complexity:** O(n \* log(k))
+
+```python
+import heapq
+
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        heapq.heapify(nums)
+        
+        while len(nums) > k:
+            heapq.heappop(nums)
+
+        heapq.heapify(nums)
+
+        return nums[0]
 ```
