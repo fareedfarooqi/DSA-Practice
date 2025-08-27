@@ -96,9 +96,10 @@ target = 1
 
 ## Code Implementation
 
-### Solution (DFS):
+### Solution One:
 
-- **Time Complexity:** O(2^n)
+- **Time Complexity:** O(2^t*t)
+- **Note:** Slower because of the linear complexity of the sum function.
 
 ```python
 class Solution:
@@ -125,4 +126,37 @@ class Solution:
 
         dfs(0)
         return res
+```
+
+### Solution Two - (A Bit Faster)
+
+- **Time Complexity:** O(2^t)
+
+```python
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        result = []
+        sumList = []
+        sumOfSumList = 0
+
+        def dfs(i):
+            nonlocal sumOfSumList
+            if i >= len(candidates):
+                if sumOfSumList == target:
+                    result.append(sumList.copy())
+                return
+            elif sumOfSumList > target:
+                return
+
+            sumList.append(candidates[i])
+            sumOfSumList += candidates[i]
+            dfs(i)
+
+            sumList.pop()
+            sumOfSumList -= candidates[i]
+            dfs(i + 1)
+
+        dfs(0)
+
+        return result
 ```
