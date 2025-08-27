@@ -144,11 +144,6 @@ import math
 
 class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
-        # We can use a combination of a dict and heap to solve this question.
-        # As we loop through the points we can calculate the Euclidean Distance and
-        # store it in the heap. Simultaneously we can store the respective coordinate
-        # within a dict. The dict will have a key of the euclidean distance and the
-        # value is the coordinate pair corresponding to this distance.
         heapOfCoordinatesWithDistances = []
         
         for point in points:
@@ -165,4 +160,5 @@ class Solution:
         
         return closestCoordinates
 ```
+
 
