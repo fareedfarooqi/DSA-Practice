@@ -81,7 +81,7 @@ stones = [1]
 
 ## Code Implementation
 
-### Solution (DFS):
+### Solution One - (DFS):
 
 - **Time Complexity:** O(n \* log(k))
 
@@ -111,4 +111,29 @@ class Solution:
                 heapq.heappush(stones_by_max_weight, stone_two_weight)
 
         return -stones_by_max_weight[0]
+```
+
+### Solution Two - Space Optimised
+
+- **Time Complexity:** O(n \* log(k))
+
+```python
+class Solution:
+    def lastStoneWeight(self, stones: List[int]) -> int:
+        if len(stones) == 1:
+            return stones[0]
+        
+        # We can use a max-heap.
+        negatedListOfStones = [-stone for stone in stones]
+        heapq.heapify(negatedListOfStones)
+
+        while len(negatedListOfStones) > 1:
+            stoneOne = -heapq.heappop(negatedListOfStones)
+            stoneTwo = -heapq.heappop(negatedListOfStones)
+            stoneClashResult = stoneOne - stoneTwo
+
+            if stoneClashResult != 0:
+                heapq.heappush(negatedListOfStones, -stoneClashResult)
+        
+        return -negatedListOfStones[0] if len(negatedListOfStones) > 0 else 0
 ```
