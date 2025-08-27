@@ -94,7 +94,7 @@ Constraints
 
 ## Code Implementation
 
-### Solution (Heaps):
+### Solution One - (Heap + Dict Approach):
 
 - **Time Complexity:** O(n \* log(k))
 
@@ -131,4 +131,37 @@ class Solution:
                 finalKPoints.append(point)
 
         return finalKPoints
+```
+
+### Solution Two - Pure Heap Approach
+
+- **Time Complexity:** O(n \* log(k))
+- **Note:** More Space Efficient.
+
+```python
+import heapq
+import math
+
+class Solution:
+    def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
+        # We can use a combination of a dict and heap to solve this question.
+        # As we loop through the points we can calculate the Euclidean Distance and
+        # store it in the heap. Simultaneously we can store the respective coordinate
+        # within a dict. The dict will have a key of the euclidean distance and the
+        # value is the coordinate pair corresponding to this distance.
+        heapOfCoordinatesWithDistances = []
+        
+        for point in points:
+            euclideanDistance = math.sqrt((point[0] - 0)**2 + (point[1] - 0)**2)
+            heapq.heappush(heapOfCoordinatesWithDistances, (-euclideanDistance, point))
+
+        while len(heapOfCoordinatesWithDistances) > k:
+            heapq.heappop(heapOfCoordinatesWithDistances)
+
+        closestCoordinates = []
+        for i in range(k):
+            shortestDistanceTuple = heapq.heappop(heapOfCoordinatesWithDistances)
+            closestCoordinates.append(shortestDistanceTuple[1])
+        
+        return closestCoordinates
 ```
