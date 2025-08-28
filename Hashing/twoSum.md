@@ -107,7 +107,21 @@ class Solution:
 ### Solution 2 (Faster & More Efficient):
 
 - **Time Complexity:** O(n)
+- **Note:** This is a two pass algorithm. We reverse the dicts essentially and compare the difference.
 
 ```python
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        indexToValueDict = dict(enumerate(nums))
+        valueToIndexDict = {}
+
+        for index, value in indexToValueDict.items():
+            valueToIndexDict[value] = index
+        
+        for index, value in indexToValueDict.items():
+            diff = target - value
+
+            if diff in valueToIndexDict and index != valueToIndexDict[diff]:
+                return [index, valueToIndexDict[diff]]
 
 ```
