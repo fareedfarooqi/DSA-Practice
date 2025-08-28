@@ -85,7 +85,7 @@ grid = [[0,0,0,0,0,0,0,0]]
 
 ## Code Implementation
 
-### Solution:
+### Solution One:
 
 - **Time Complexity (A bit slow):** O(N \* M).
 
@@ -125,4 +125,44 @@ class Solution:
 
         visited.remove((row, col))
         return area[0]
+```
+
+### Solution Two:
+
+- **Time Complexity (A bit slow):** O(N \* M).
+
+```python
+class Solution:
+    def _dfs(self, grid, row, col, visited) -> int:
+        NUM_ROWS, NUM_COLS = len(grid), len(grid[0])
+
+        if min(row, col) < 0 or row == NUM_ROWS or col == NUM_COLS or (row, col) in visited or grid[row][col] == 0:
+            return 0
+
+        visited.add((row, col))
+        area = 0
+        area += self._dfs(grid, row + 1, col, visited)
+        area += self._dfs(grid, row - 1, col, visited)
+        area += self._dfs(grid, row, col + 1, visited)
+        area += self._dfs(grid, row, col - 1, visited)
+
+        visited.remove((row, col))
+        area += 1
+        grid[row][col] = 0
+        
+        return area
+
+
+    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+        maxArea = 0
+
+        for i in range(len(grid)):
+            for j in range(len(grid[i])):
+                if grid[i][j] == 1:
+                    areaOfIsland = self._dfs(grid, i, j, set())
+
+                    if areaOfIsland > maxArea:
+                        maxArea = areaOfIsland
+
+        return maxArea
 ```
