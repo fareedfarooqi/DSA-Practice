@@ -90,7 +90,13 @@ class Solution:
         setNums = set(nums)
         
         return True if len(setNums) < len(nums) else False
-        
+
+
+# More Pythonic Solution:
+
+# class Solution:
+    # def containsDuplicate(self, nums: List[int]) -> bool:
+        # return not len(set(nums)) == len(nums)
 ```
 
 ### Solution 2 (Using Hash Maps):
@@ -110,4 +116,5 @@ class Solution:
                 numsDict[num] = 1
         
         return False
+
 ```
