@@ -108,7 +108,7 @@ The graph is empty (no nodes).
 
 ## Code Implementation
 
-### Solution:
+### Solution One (DFS):
 
 - **Time Complexity:** O(V + E).
 
@@ -143,4 +143,51 @@ class Solution:
             return copy
         
         return dfs(node)
+
+```
+
+### Solution One (BFS):
+
+- **Time Complexity:** O(V + E).
+
+```python
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val = 0, neighbors = None):
+        self.val = val
+        self.neighbors = neighbors if neighbors is not None else []
+"""
+
+from collections import deque
+from typing import Optional
+class Solution:
+    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+        # This is a BFS traversal solution that will traverse the graph and clone it.
+        if not node:
+            return None
+
+        # Idea is we have a map where key is our original node and our value will be a
+        # new node. We will have to perform BFS to get new references to neighbour nodes.
+        clone = { node: Node(node.val) }
+        queue = deque([node])
+
+        while queue:
+            for i in range(len(queue)):
+                curNode = queue.popleft()
+
+                for neighbour in curNode.neighbors:
+                    if neighbour not in clone:
+                        # So the neighbour does not have a key entry into the graph.
+                        clone[neighbour] = Node(neighbour.val)
+
+                        # We also append it to the queue for processing.
+                        queue.append(neighbour)
+
+                    # We must link the neighbour to its parent node in the cloned graph too.
+                    # Note that clone[neighbour] is the new copy of node. If we just done
+                    # .append(neighbour) then neighbour would just be a reference to the node.
+                    clone[curNode].neighbors.append(clone[neighbour])
+
+        return clone[node]
 ```
