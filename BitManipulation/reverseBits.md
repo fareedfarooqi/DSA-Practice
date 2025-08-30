@@ -86,4 +86,24 @@ class Solution:
             res += ((bit << (31 - i)))
         
         return res
+
+```
+
+### Solution Two:
+
+- **Time Complexity:** `O(1)`
+
+```python
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        newNumBits = 0
+
+        for i in range(32):
+            if n & 1 == 1:
+                newNumBits = (newNumBits << 1) | 1
+            else:
+                newNumBits = (newNumBits << 1) | 0
+            n = n >> 1
+
+        return newNumBits
 ```
