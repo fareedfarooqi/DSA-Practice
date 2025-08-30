@@ -128,7 +128,8 @@ class Solution:
 
 ### Solution Two - (Slow & Inefficient):
 
-- **Time Complexity:** O(n * m)
+- **Time Complexity:** O(2^(n * m))
+- **Note:** Use this solution below in order to understand my solution three below.
 
 ```python
 class Solution:
@@ -157,6 +158,48 @@ class Solution:
                 return 1 + dfs(row + 1, col + 1)
             
             return max(dfs(row + 1, col), dfs(row, col + 1))
+        
+        return dfs(0, 0)
+```
+
+### Solution Three - (Faster: Top-Down Apprroach):
+
+- **Time Complexity:** O(n * m)
+
+```python
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        # Imagine this as a 2D grid i.e.,
+        #
+        # |   | a | b | c | d | e |
+        # | a |   |   |   |   |   |
+        # | c |   |   |   |   |   |
+        # | e |   |   |   |   |   |
+        #
+        # The first character matches ("a") we can compare the subsequence
+        # "bcde" vs "ce" and continue. Now compare the character "b" vs "c"
+        # we can see they don't match. So we have two choices we either compare
+        # "cde" vs "ce" OR "bcde" vs "e". We can do this recursively and see
+        # how many total matches we get.
+
+        cache = [[-1] * len(text1) for i in range(len(text2))]
+
+        def dfs(row, col):
+            if row == len(text2) or col == len(text1):
+                # Border case.
+                return 0
+
+            if cache[row][col] > -1:
+                return cache[row][col]
+            
+            if text2[row] == text1[col]:
+                # We increment by one and go diagonally to compare next part
+                # i.e., "bcde" vs "ce".
+                cache[row][col] = (1 + dfs(row + 1, col + 1))
+                return cache[row][col]
+            
+            cache[row][col] = max(dfs(row + 1, col), dfs(row, col + 1))
+            return cache[row][col]
         
         return dfs(0, 0)
 ```
