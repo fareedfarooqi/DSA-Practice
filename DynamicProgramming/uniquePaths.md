@@ -100,7 +100,48 @@ class Solution:
         return curRow[0]
 ```
 
-## Solution Three - (Slow & Inefficient)
+### Solution Two - (Fast: Top-Down Approach)
+
+- **Time Complexity:** O(n \* m)
+- **Space Complexity:** O(n \* m)
+
+```python
+class Solution:
+    def uniquePaths(self, m: int, n: int) -> int:
+        # Some cases to check include ensuring that the robot
+        # is not out of bounds on the right-hand side as well
+        # as ensure the robot is not out of bounds from the
+        # bottom of the grid.
+        
+        row, col = 0, 0
+        NUM_ROWS, NUM_COLS = m, n
+        cache = [ [0] * n for i in range(m) ]
+        
+        def dfs(row, col, numPaths = 0):
+            if row == NUM_ROWS or col == NUM_COLS:
+                return 0
+            
+            if row == NUM_ROWS - 1 and col == NUM_COLS - 1:
+                return 1
+
+            # If we have already computed this return it from our cache.
+            if cache[row][col] != 0:
+                return cache[row][col]
+
+            numPaths = 0
+            # We can only move in two directions:
+            # --- Move Down
+            # --- Move Right
+            numPaths += dfs(row + 1, col, numPaths)
+            numPaths += dfs(row, col + 1, numPaths)
+            cache[row][col] = numPaths
+
+            return cache[row][col]
+        
+        return dfs(0, 0)
+```
+
+### Solution Three - (Slow & Inefficient)
 
 - **Time Complexity:** O(2^(n + m)
 - **Space Complexity:** O(1)
