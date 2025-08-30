@@ -122,7 +122,7 @@ obstacleGrid = [[0,1],
 
 ## Code Implementation:
 
-### Solution:
+### Solution One - (Bottom Up Approach):
 
 - **Time Complexity:** O(n * m)
 - **Space Complexity:** O(n)
@@ -143,4 +143,33 @@ class Solution:
                     dp[c] = dp[c] + dp[c + 1]
 
         return dp[0]
+```
+
+### Solution One - (Top Down Approach):
+
+- **Time Complexity:** O(n * m)
+- **Space Complexity:** O(n * m)
+
+```python
+class Solution:
+    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+        NUM_ROWS, NUM_COLS = len(obstacleGrid), len(obstacleGrid[0])
+        cache = [ [0] * NUM_COLS for _ in range(NUM_ROWS) ]
+
+        def dfs(row, col, numPaths = 0):
+            # If we are out of bounds or have hit an obstacle we return 0 paths.
+            if row == NUM_ROWS or col == NUM_COLS or obstacleGrid[row][col] == 1:
+                return 0
+
+            if row == NUM_ROWS - 1 and col == NUM_COLS - 1:
+                return 1
+
+            if cache[row][col] != 0:
+                return cache[row][col]
+            
+            cache[row][col] = dfs(row + 1, col) + dfs(row, col + 1)
+
+            return cache[row][col]
+
+        return dfs(0, 0)
 ```
