@@ -85,7 +85,7 @@ There is no common subsequence, so the result is 0.
 
 ## Code Implementation
 
-### Solution:
+### Solution One - (Bottom Up Approach):
 
 - **Time Complexity:** O(n * m)
 - **Space Complexity:** O(n * m)
@@ -125,3 +125,37 @@ class Solution:
 ![IMG_3421](https://github.com/user-attachments/assets/113faf93-dda3-42e3-8c67-0fdfb8357595)
 
 ![IMG_3423](https://github.com/user-attachments/assets/95b4ac83-df0b-4f9c-9613-63b87aab2e78)
+
+### Solution Two - (Slow & Inefficient):
+
+- **Time Complexity:** O(n * m)
+
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        # Imagine this as a 2D grid i.e.,
+        #
+        # |   | a | b | c | d | e |
+        # | a |   |   |   |   |   |
+        # | c |   |   |   |   |   |
+        # | e |   |   |   |   |   |
+        #
+        # The first character matches ("a") we can compare the subsequence
+        # "bcde" vs "ce" and continue. Now compare the character "b" vs "c"
+        # we can see they don't match. So we have two choices we either compare
+        # "cde" vs "ce" OR "bcde" vs "e". We can do this recursively and see
+        # how many total matches we get.
+
+        def dfs(row, col):
+            if row == len(text2) or col == len(text1):
+                # Border case.
+                return 0
+            
+            if text2[row] == text1[col]:
+                # We increment by one and go diagonally to compare next part
+                # i.e., "bcde" vs "ce".
+                return 1 + dfs(row + 1, col + 1)
+            
+            return max(dfs(row + 1, col), dfs(row, col + 1))
+        
+        return dfs(0, 0)
+
