@@ -130,6 +130,7 @@ class Solution:
 
 - **Time Complexity:** O(n * m)
 
+```python
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         # Imagine this as a 2D grid i.e.,
@@ -158,4 +159,4 @@ class Solution:
             return max(dfs(row + 1, col), dfs(row, col + 1))
         
         return dfs(0, 0)
-
+```
